@@ -1,5 +1,8 @@
 package com.demo.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -18,8 +21,24 @@ public class UserServiceImpl implements UserService{
     private UserDAO userDAO;
      
     public int insertUser(User user) {
-        // TODO Auto-generated method stub
+       
         return userDAO.insertUser(user);
     }
+
+	public int updateUser(User user) {
+	
+		return 0;
+	}
+
+	public int deleteUser(User user) {
+		
+		return 0;
+	}
+
+	public List<User> findUser(User user) {
+		List<User> list = new ArrayList<User>();
+		
+		return list;
+	}
  
 }
