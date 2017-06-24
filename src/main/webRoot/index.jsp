@@ -6,10 +6,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>登陆页面</title>
 </head>
+
+//引入jquery框架
+<script src="js/jquery-1.8.3.min.js">
+</script>
+
+<script type="text/javascript">
+	function testjquery()
+
+	{
+
+		var user_name = $("#test").attr("value");
+
+		alert(user_name);
+
+	}
+</script>
+
 <body>
-	<form action="index" method="post">
-		<input type="text" name="name"> <input type="password"
-			name="password"> <input type="submit" value="确认">
-	</form>
+
+	<input id="test" value="jquery">
+
+	<input type="button" value="click me!" onclick="testjquery();">
+
 </body>
 </html>
